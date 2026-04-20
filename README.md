@@ -1,4 +1,4 @@
-# The Swell Center (BSAN E-Business Prototype)
+# The Swell Center (BSAN E-Business)
 
 This project is a beginner-friendly static web application. It represents **The Swell Center**, a wellness center that combines fitness, mental wellness, recovery services, and appointment booking.
 

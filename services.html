@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Swell Center | Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Shared header and nav for consistency across pages -->
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">Wellness. Fitness. Recovery.</p>
+        <h1>The Swell Center</h1>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" aria-current="page">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="main-content">
+      <section aria-labelledby="services-heading">
+        <h2 id="services-heading">Our Services</h2>
+        <p>
+          We provide practical, student-friendly and professional wellness options. The table below
+          shows service type, length, pricing, and current availability.
+        </p>
+      </section>
+
+      <!-- Accessible table with caption, column headers, and row headers -->
+      <section class="table-section" aria-label="Service details table">
+        <table>
+          <caption>
+            Service Menu at The Swell Center
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Service</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Price</th>
+              <th scope="col">Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Fitness Assessment + Plan</th>
+              <td>45 minutes</td>
+              <td>$55</td>
+              <td>Mon-Fri</td>
+            </tr>
+            <tr>
+              <th scope="row">Guided Mindfulness Session</th>
+              <td>30 minutes</td>
+              <td>$35</td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <th scope="row">Recovery Stretch Therapy</th>
+              <td>50 minutes</td>
+              <td>$60</td>
+              <td>Tue-Sat</td>
+            </tr>
+            <tr>
+              <th scope="row">Nutrition & Habit Coaching</th>
+              <td>40 minutes</td>
+              <td>$45</td>
+              <td>Mon, Wed, Fri</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Created for the BSAN e-business application prototype.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Swell Center | Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Shared branding/header -->
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">Wellness. Fitness. Recovery.</p>
+        <h1>The Swell Center</h1>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html" aria-current="page">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="main-content">
+      <section aria-labelledby="booking-heading">
+        <h2 id="booking-heading">Book a Session</h2>
+        <p>
+          Fill out the form below to request an appointment. This prototype form is designed for
+          layout and accessibility practice.
+        </p>
+      </section>
+
+      <!-- Form with fieldset + legend and labels for all controls -->
+      <section class="form-wrapper" aria-label="Appointment request form">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Appointment Details</legend>
+
+            <div class="form-grid">
+              <div>
+                <label for="full-name">Full name</label>
+                <input id="full-name" name="full-name" type="text" autocomplete="name" required />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div>
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+
+              <div>
+                <label for="service">Preferred service</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="fitness">Fitness Assessment + Plan</option>
+                  <option value="mindfulness">Guided Mindfulness Session</option>
+                  <option value="recovery">Recovery Stretch Therapy</option>
+                  <option value="nutrition">Nutrition & Habit Coaching</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="date">Preferred date</label>
+                <input id="date" name="date" type="date" required />
+              </div>
+
+              <div>
+                <label for="time">Preferred time</label>
+                <input id="time" name="time" type="time" required />
+              </div>
+
+              <div class="full-width">
+                <label for="notes">Notes (goals, injuries, preferences)</label>
+                <textarea id="notes" name="notes" rows="5"></textarea>
+              </div>
+            </div>
+
+            <button type="submit">Send booking request</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>We will contact you within one business day.</p>
+      </div>
+    </footer>
+  </body>
+</html>

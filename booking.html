@@ -26,14 +26,13 @@
       <section aria-labelledby="booking-heading">
         <h2 id="booking-heading">Book a Session</h2>
         <p>
-          Fill out the form below to request an appointment. This prototype form is designed for
-          layout and accessibility practice.
+          Fill out the form below to request an appointment.
         </p>
       </section>
 
       <!-- Form with fieldset + legend and labels for all controls -->
       <section class="form-wrapper" aria-label="Appointment request form">
-        <form action="#" method="post">
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('Request submitted!');">
           <fieldset>
             <legend>Appointment Details</legend>
 

@@ -1,0 +1,263 @@
+/*
+  The Swell Center shared styles
+  - Pure CSS (no framework)
+  - Mobile-first responsive design
+*/
+
+:root {
+  --bg: #f4f8f7;
+  --surface: #ffffff;
+  --text: #1d2a2a;
+  --muted: #556b6a;
+  --primary: #1f7a7a;
+  --primary-dark: #145555;
+  --border: #cddad8;
+  --shadow: 0 10px 22px rgba(25, 58, 59, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Constrains content width for comfortable reading */
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(140deg, #e3f0ef, #d6eceb);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0 1.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 0.35rem 0 1rem;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.nav-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-dark);
+  background: #ffffffbb;
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible,
+.button-link:hover,
+.button-link:focus-visible,
+button:hover,
+button:focus-visible {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.nav-list a[aria-current="page"] {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+main {
+  padding: 2rem 0 2.5rem;
+}
+
+.hero {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.button-link,
+button {
+  display: inline-block;
+  margin-top: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  background: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.image-link {
+  display: block;
+  margin-top: 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.image-link img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.image-link span {
+  display: inline-block;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Simple card layout for feature highlights */
+.card-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.table-section {
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+caption {
+  text-align: left;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+th,
+td {
+  border-top: 1px solid var(--border);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+thead th {
+  background: #edf4f4;
+}
+
+.form-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: 700;
+  color: var(--primary-dark);
+  padding: 0 0.35rem;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #98afae;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font: inherit;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #7cc2c1;
+  border-color: var(--primary-dark);
+}
+
+.site-footer {
+  padding: 1.1rem 0;
+  background: #e7f0ef;
+  border-top: 1px solid var(--border);
+  color: #213837;
+}
+
+/* Responsive enhancement for tablets and larger screens */
+@media (min-width: 700px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+}
